@@ -8,10 +8,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   Button,
 } from "reactstrap";
 import eaLogo from "../../assets/images/efektywny-altruizm-logo.svg";
@@ -40,17 +36,17 @@ const TopBar = () => {
         <Collapse isOpen={isOpen} navbar className="justify-content-end">
           <Nav navbar>
             <NavItem>
-              <NavLink href="#" className="main-nav-item">
+              <NavLink href="/movement" className="main-nav-item">
                 {t("main_nav.about_movement")}
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#" className="main-nav-item">
+              <NavLink href="/foundation" className="main-nav-item">
                 {t("main_nav.about_foundation")}
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#" className="main-nav-item">
+              <NavLink href="/join-us" className="main-nav-item">
                 {t("main_nav.join_us")}
               </NavLink>
             </NavItem>

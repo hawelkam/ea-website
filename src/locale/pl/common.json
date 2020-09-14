@@ -1,12 +1,21 @@
 {
-  "welcome": {
-    "title": "Jak przynieść światu najwięcej dobra?",
-    "text": "Jak przynieść światu najwięcej dobra wykorzystując ograniczone środki? Efektywny Altruizm szuka odpowiedzi na to pytanie."
-  },
   "main_nav": {
     "about_movement": "O ruchu",
     "about_foundation": "O fundacji",
     "join_us": "Dołącz do nas",
     "contact": "Kontakt"
+  },
+  "welcome": {
+    "title": "Jak przynieść światu najwięcej dobra?",
+    "text": "Jak przynieść światu najwięcej dobra wykorzystując ograniczone środki? Efektywny Altruizm szuka odpowiedzi na to pytanie."
+  },
+  "movement": {
+    "title": "Czym jest Efektywny Altruizm?"
+  },
+  "foundation": {
+    "title": "Jak działamy w Polsce?"
+  },
+  "join-us": {
+    "title": "Dołącz do nas!"
   }
 }

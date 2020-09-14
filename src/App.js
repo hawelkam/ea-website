@@ -1,28 +1,38 @@
 import React, { Suspense } from "react";
 import "./App.css";
 import TopBar from "./components/TopBar/TopBar";
-import IntroSection from "./components/IntroSection/IntroSection";
-import QuoteSection from "./components/QuoteSection/QuoteSection";
-import ContentPreviewSection from "./components/ContentPreviewSection/ContentPreviewSection";
-import NewsletterCtaSection from "./components/NewsletterCtaSection/NewsletterCtaSection";
-import SocialSection from "./components/SocialSection/SocialSection";
+import HomePage from "./pages/Home/HomePage";
+import MovementPage from "./pages/Movement/MovementPage";
+import FoundationPage from "./pages/Foundation/FoundationPage";
+import JoinUsPage from "./pages/JoinUs/JoinUsPage";
 import Footer from "./components/Footer/Footer";
 import { Container } from "reactstrap";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <Suspense fallback="loading">
-      <Container fluid>
-        <TopBar />
-        <IntroSection />
-        <QuoteSection />
-        <ContentPreviewSection />
-        <ContentPreviewSection />
-        <NewsletterCtaSection />
-        <SocialSection />
-        <Footer />
-      </Container>
-    </Suspense>
+    <Router>
+      <Suspense fallback="loading">
+        <Container fluid>
+          <TopBar />
+          <Switch>
+            <Route path="/" exact>
+              <HomePage />
+            </Route>
+            <Route path="/movement" exact>
+              <MovementPage />
+            </Route>
+            <Route path="/foundation" exact>
+              <FoundationPage />
+            </Route>
+            <Route path="/join-us" exact>
+              <JoinUsPage />
+            </Route>
+          </Switch>
+          <Footer />
+        </Container>
+      </Suspense>
+    </Router>
   );
 }
 
