@@ -1,5 +1,8 @@
 {
   "welcome": {
     "title": "Welcome to Effective Altruism page!"
+  },
+  "main_nav": {
+    "about_movement": "About the movement"
   }
 }

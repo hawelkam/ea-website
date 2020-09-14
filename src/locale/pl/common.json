@@ -1,5 +1,10 @@
 {
   "welcome": {
     "title": "Witaj na stronie Efektywnego Altruizmu!"
+  },
+  "main_nav": {
+    "about_movement": "O ruchu",
+    "about_foundation": "O fundacji",
+    "join_us": "Dołącz do nas"
   }
 }
