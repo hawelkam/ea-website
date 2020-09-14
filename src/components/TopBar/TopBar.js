@@ -19,12 +19,18 @@ import eaLogo from "../../assets/images/efektywny-altruizm-logo.svg";
 const TopBar = () => {
   const { t, i18n } = useTranslation("common");
   const [isOpen, setIsOpen] = useState(false);
+  const [lang, setLang] = useState("pl");
 
   const toggle = () => setIsOpen(!isOpen);
+  const switchLanguage = () => {
+    const langToSet = lang === "pl" ? "en" : "pl";
+    setLang(langToSet);
+    i18n.changeLanguage(langToSet);
+  };
 
   return (
     <div>
-      <Navbar expand="md" className="">
+      <Navbar expand="lg" className="">
         <NavbarBrand href="/">
           <object type="image/svg+xml" data={eaLogo} className="logo">
             EA Logo
@@ -48,30 +54,15 @@ const TopBar = () => {
                 {t("main_nav.join_us")}
               </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret className="main-nav-item">
-                Język
-              </DropdownToggle>
-              <DropdownMenu>
-                <DropdownItem
-                  onClick={() => i18n.changeLanguage("pl")}
-                  className="main-nav-item"
-                >
-                  PL
-                </DropdownItem>
-                <DropdownItem
-                  onClick={() => i18n.changeLanguage("en")}
-                  className="main-nav-item"
-                >
-                  EN
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+              <NavLink onClick={switchLanguage} className="main-nav-item">
+                {lang === "pl" ? "EN" : "PL"}
+              </NavLink>
+            </NavItem>
           </Nav>
-          <Button className="main-nav-button">Kontakt</Button>
+          <Button className="main-nav-button">{t("main_nav.contact")}</Button>
         </Collapse>
       </Navbar>
-      <h1>{t("welcome.title")}</h1>
     </div>
   );
 };
