@@ -7,7 +7,7 @@ import FoundationPage from "./pages/Foundation/FoundationPage";
 import JoinUsPage from "./pages/JoinUs/JoinUsPage";
 import Footer from "./components/Footer/Footer";
 import { Container } from "reactstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (

@@ -1,6 +1,7 @@
 {
   "welcome": {
-    "title": "Welcome to Effective Altruism page!"
+    "title": "Welcome to Effective Altruism page!",
+    "quote": "There is a growing movement called Effective Altruism. It’s important because it combines both the heart and the head."
   },
   "main_nav": {
     "about_movement": "About the movement"

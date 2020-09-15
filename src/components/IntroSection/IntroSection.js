@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import "./IntroSection.scss";
 
 const IntroSection = ({ content }) => {
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
 
   return (
     <Row className="intro-section">

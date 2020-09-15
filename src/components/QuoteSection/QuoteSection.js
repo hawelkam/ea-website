@@ -4,15 +4,12 @@ import "./QuoteSection.scss";
 import { Col, Row } from "reactstrap";
 
 const QuoteSection = () => {
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
 
   return (
     <Row className="quote-section">
       <Col xs={7} className="text-center mx-auto">
-        <p className="quote-section__quote">
-          “Ruch zwany Efektywnym Altruizmem zdobywa coraz większą popularność.
-          To ważne, bo łączy ze sobą serce i rozum.”
-        </p>
+        <p className="quote-section__quote">"{t("welcome.quote")}"</p>
         <p className="quote-section__author">- Peter Singer</p>
       </Col>
     </Row>
