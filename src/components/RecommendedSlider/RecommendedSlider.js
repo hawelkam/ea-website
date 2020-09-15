@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import "./RecommendedSlider.scss";
 import okLogo from "../../assets/images/ok-logo.png";
 import paretoLogo from "../../assets/images/pareto-logo.png";
 import altruistoLogo from "../../assets/images/altruisto-logo.png";
@@ -17,24 +18,28 @@ const RecommendedSlider = () => {
     cssEase: "linear",
     pauseOnHover: true,
     className: "d-flex align-items-center",
+    dots: true,
   };
   return (
-    <Row>
-      <Col>
+    <Row className="recommended-slider">
+      <Col className="text-center mx-auto">
+        <h1 className="recommended-slider__heading">
+          Zaprzyjaźnione organizacje
+        </h1>
         <Slider {...settings}>
-          <div className="slide">
+          <div>
             <img src={okLogo} alt="OK logo" />
           </div>
-          <div className="slide">
+          <div>
             <img src={schweitzerLogo} alt="Albert Schweitzer logo" />
           </div>
-          <div className="slide">
+          <div>
             <img src={provegLogo} alt="ProVeg logo" />
           </div>
-          <div className="slide">
+          <div>
             <img src={altruistoLogo} alt="Altruisto logo" />
           </div>
-          <div className="slide">
+          <div>
             <img src={paretoLogo} alt="Pareto logo" />
           </div>
         </Slider>
