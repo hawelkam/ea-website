@@ -1,5 +1,5 @@
 .footer {
-  height: 300px;
+  padding: 2em 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -8,4 +8,24 @@
   background-color: #0b879d;
   opacity: 1;
   color: #fff;
+  &__item {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    &:hover {
+      color: #222222;
+    }
+  }
 }

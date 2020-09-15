@@ -8,9 +8,8 @@ const Footer = () => {
 
   return (
     <Row className="footer">
-      <Col>
-        <h1>Footer SECTION</h1>
-        <p>
+      <Col className="d-flex flex-row justify-content-between align-items-center">
+        <p className="m-0">
           Fundacja Efektywny Altruizm
           <br />
           Plac Bankowy 2, 00-095 Warszawa
@@ -22,18 +21,23 @@ const Footer = () => {
           Nr konta: PL 67 1050 1012 1000 0090 8040 3265
           <br />
         </p>
-        <Nav>
+        <Nav className="flex-column align-items-end">
           <NavItem>
-            <NavLink>Materiały dla mediów</NavLink>
+            <NavLink
+              className="footer__item"
+              href="https://drive.google.com/drive/folders/10TgWw_2vMKzcbRUn1HpMsqgmwoW9Dy0l?usp=sharing"
+            >
+              Materiały dla mediów
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Napisz do nas</NavLink>
+            <NavLink className="footer__item">Napisz do nas</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Ciasteczka</NavLink>
+            <NavLink className="footer__item">Ciasteczka</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Polityka prywatności</NavLink>
+            <NavLink className="footer__item">Polityka prywatności</NavLink>
           </NavItem>
         </Nav>
       </Col>
