@@ -4,21 +4,21 @@ import { Col, Nav, NavItem, NavLink, Row } from "reactstrap";
 import "./Footer.scss";
 
 const Footer = () => {
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
 
   return (
     <Row className="footer">
       <Col className="d-flex flex-row justify-content-between align-items-center">
         <p className="m-0">
-          Fundacja Efektywny Altruizm
+          {t("footer.foundation.name")}
           <br />
-          Plac Bankowy 2, 00-095 Warszawa
+          {t("footer.foundation.address")}
           <br />
-          KRS: 0000726237, REGON: 369951399, NIP: 5252746902
+          {t("footer.foundation.identifiers")}
           <br />
-          ING Bank Śląski S.A.
+          {t("footer.foundation.account.name")}
           <br />
-          Nr konta: PL 67 1050 1012 1000 0090 8040 3265
+          {t("footer.foundation.account.number")}
           <br />
         </p>
         <Nav className="flex-column align-items-end">

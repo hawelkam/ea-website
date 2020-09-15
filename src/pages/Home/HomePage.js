@@ -4,6 +4,7 @@ import QuoteSection from "../../components/QuoteSection/QuoteSection";
 import ContentPreviewSection from "../../components/ContentPreviewSection/ContentPreviewSection";
 import NewsletterCtaSection from "../../components/NewsletterCtaSection/NewsletterCtaSection";
 import SocialSection from "../../components/SocialSection/SocialSection";
+import RecommendedSlider from "../../components/RecommendedSlider/RecommendedSlider";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <QuoteSection />
       <ContentPreviewSection />
       <ContentPreviewSection />
+      <RecommendedSlider />
       <NewsletterCtaSection />
       <SocialSection />
     </>

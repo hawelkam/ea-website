@@ -18,5 +18,16 @@
   },
   "join-us": {
     "title": "Dołącz do nas!"
+  },
+  "footer": {
+    "foundation": {
+      "name": "Fundacja Efektywny Altruizm",
+      "address": "Plac Bankowy 2, 00-095 Warszawa",
+      "identifiers": "KRS: 0000726237, REGON: 369951399, NIP: 5252746902",
+      "account": {
+        "name": "ING Bank Śląski S.A.",
+        "number": "Nr konta: PL 67 1050 1012 1000 0090 8040 3265"
+      }
+    }
   }
 }
