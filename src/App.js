@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import "./App.css";
+import "./App.scss";
 import TopBar from "./components/TopBar/TopBar";
 import HomePage from "./pages/Home/HomePage";
 import MovementPage from "./pages/Movement/MovementPage";

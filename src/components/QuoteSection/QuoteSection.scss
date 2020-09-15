@@ -1,0 +1,22 @@
+.quote-section {
+  justify-content: center;
+  margin-bottom: 85px;
+  opacity: 1;
+  &__quote {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 300;
+    text-transform: none;
+  }
+  &__author {
+    opacity: 0.6;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}

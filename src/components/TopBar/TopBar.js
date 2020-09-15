@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import "./TopBar.scss";
 import {
   Collapse,
   Navbar,
@@ -36,27 +37,27 @@ const TopBar = () => {
         <Collapse isOpen={isOpen} navbar className="justify-content-end">
           <Nav navbar>
             <NavItem>
-              <NavLink href="/movement" className="main-nav-item">
+              <NavLink href="/movement" className="main-nav__item">
                 {t("main_nav.about_movement")}
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/foundation" className="main-nav-item">
+              <NavLink href="/foundation" className="main-nav__item">
                 {t("main_nav.about_foundation")}
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/join-us" className="main-nav-item">
+              <NavLink href="/join-us" className="main-nav__item">
                 {t("main_nav.join_us")}
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={switchLanguage} className="main-nav-item">
+              <NavLink onClick={switchLanguage} className="main-nav__item">
                 {lang === "pl" ? "EN" : "PL"}
               </NavLink>
             </NavItem>
           </Nav>
-          <Button className="main-nav-button">{t("main_nav.contact")}</Button>
+          <Button className="main-nav__button">{t("main_nav.contact")}</Button>
         </Collapse>
       </Navbar>
     </div>
