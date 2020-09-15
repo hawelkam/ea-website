@@ -1,14 +1,18 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Col, Row } from "reactstrap";
+import "./NewsletterCtaSection.scss";
+import { Button, Col, Row } from "reactstrap";
 
 const NewsletterCtaSection = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
-    <Row>
-      <Col>
-        <h1>NewsletterCtaSection SECTION</h1>
+    <Row className="newsletter-cta-section">
+      <Col className="text-center mx-auto">
+        <h1 className="newsletter-cta-section__heading">
+          Zapisz się do newslettera
+        </h1>
+        <Button className="newsletter-cta-section__button">SUBSKRYBUJ</Button>
       </Col>
     </Row>
   );
