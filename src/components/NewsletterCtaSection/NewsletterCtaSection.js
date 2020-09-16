@@ -1,10 +1,10 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+//import { useTranslation } from "react-i18next";
 import "./NewsletterCtaSection.scss";
 import { Button, Col, Row } from "reactstrap";
 
 const NewsletterCtaSection = () => {
-  const { t, i18n } = useTranslation("common");
+  //const { t, i18n } = useTranslation("common");
 
   return (
     <Row className="newsletter-cta-section">

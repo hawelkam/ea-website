@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+//import { useTranslation } from "react-i18next";
 import { Col, Row } from "reactstrap";
 import "./SocialSection.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,17 +9,21 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const SocialSection = () => {
-  const { t, i18n } = useTranslation("common");
+  //const { t, i18n } = useTranslation("common");
 
   return (
     <Row className="social-section">
-      <Col className="text-center mx-auto">
-        <a href="#">
-          <FontAwesomeIcon icon={faFacebookSquare} className="fa-5x" />
-        </a>
-        <a href="#">
-          <FontAwesomeIcon icon={faLinkedin} className="fa-5x" />
-        </a>
+      <Col className="d-flex justify-content-center mx-auto">
+        <div className="social-section__icon">
+          <a href="http://facebook.com">
+            <FontAwesomeIcon icon={faFacebookSquare} className="fa-5x" />
+          </a>
+        </div>
+        <div className="social-section__icon">
+          <a href="htpp://linkedin.com">
+            <FontAwesomeIcon icon={faLinkedin} className="fa-5x" />
+          </a>
+        </div>
       </Col>
     </Row>
   );

@@ -1,10 +1,10 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+//import { useTranslation } from "react-i18next";
 import "./ContentPreviewSection.scss";
 import { Button, Col, Row } from "reactstrap";
 
 const ContentPreviewSection = ({ reversed, content }) => {
-  const { t, i18n } = useTranslation("common");
+  //const { t, i18n } = useTranslation("common");
 
   return (
     <Row

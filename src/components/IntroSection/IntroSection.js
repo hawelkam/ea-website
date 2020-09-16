@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Col, Row } from "reactstrap";
 import { useTranslation } from "react-i18next";
 import "./IntroSection.scss";
+import Fade from "react-reveal/Fade";
 
 const IntroSection = ({ content }) => {
   const { t } = useTranslation("common");
@@ -9,7 +10,11 @@ const IntroSection = ({ content }) => {
   return (
     <Row className="intro-section">
       <Col xs={6} className="text-center mx-auto">
-        <h1 className="intro-section__heading">{t(`${content}.title`)}</h1>
+        <Fade bottom cascade>
+          <div>
+            <h1 className="intro-section__heading">{t(`${content}.title`)}</h1>
+          </div>
+        </Fade>
         <p className="intro-section__subtitle">{t(`${content}.text`)}</p>
         <Button className="intro-section__button">Dowiedz się więcej</Button>
       </Col>
