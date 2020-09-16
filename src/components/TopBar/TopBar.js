@@ -7,11 +7,10 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
   Button,
 } from "reactstrap";
 import eaLogo from "../../assets/images/efektywny-altruizm-logo.svg";
+import { Link } from "react-router-dom";
 
 const TopBar = () => {
   const { t, i18n } = useTranslation("common");
@@ -36,26 +35,18 @@ const TopBar = () => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar className="justify-content-end">
           <Nav navbar>
-            <NavItem>
-              <NavLink href="/movement" className="main-nav__item">
-                {t("main_nav.about_movement")}
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/foundation" className="main-nav__item">
-                {t("main_nav.about_foundation")}
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/join-us" className="main-nav__item">
-                {t("main_nav.join_us")}
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink onClick={switchLanguage} className="main-nav__item">
-                {lang === "pl" ? "EN" : "PL"}
-              </NavLink>
-            </NavItem>
+            <Link to="/movement" className="main-nav__item">
+              {t("main_nav.about_movement")}
+            </Link>
+            <Link to="/foundation" className="main-nav__item">
+              {t("main_nav.about_foundation")}
+            </Link>
+            <Link to="/join-us" className="main-nav__item">
+              {t("main_nav.join_us")}
+            </Link>
+            <Link onClick={switchLanguage} className="main-nav__item">
+              {lang === "pl" ? "EN" : "PL"}
+            </Link>
           </Nav>
           <Button className="main-nav__button">{t("main_nav.contact")}</Button>
         </Collapse>

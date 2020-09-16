@@ -16,9 +16,11 @@
     -moz-transition: 0.3s ease;
     -ms-transition: 0.3s ease;
     -o-transition: 0.3s ease;
+    padding: 0.5rem 1rem;
     &:hover {
       opacity: 1;
       color: #222222;
+      text-decoration: none;
     }
   }
   &__button.btn {
