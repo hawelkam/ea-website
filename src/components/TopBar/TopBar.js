@@ -28,40 +28,32 @@ const TopBar = () => {
   return (
     <div>
       <Navbar expand="lg" className="">
-        <Col>
-          <NavbarBrand href="/">
-            <object type="image/svg+xml" data={eaLogo} className="logo">
-              EA Logo
-            </object>
-          </NavbarBrand>
-        </Col>
-
-        <Col>
-          <NavbarToggler onClick={toggle} />
-
-          <Collapse isOpen={isOpen} navbar className="justify-content-center">
-            <Nav navbar>
-              <Link to="/movement" className="main-nav__item">
-                {t("main_nav.about_movement")}
-              </Link>
-              <Link to="/foundation" className="main-nav__item">
-                {t("main_nav.about_foundation")}
-              </Link>
-              <Link to="/join-us" className="main-nav__item">
-                {t("main_nav.join_us")}
-              </Link>
-              <Link to="/blog" className="main-nav__item">
-                {t("main_nav.blog")}
-              </Link>
-              <Link onClick={switchLanguage} className="main-nav__item">
-                {lang === "pl" ? "EN" : "PL"}
-              </Link>
-            </Nav>
-          </Collapse>
-        </Col>
-        <Col style={{ textAlign: "right" }}>
-          <Button className="main-nav__button">{t("main_nav.contact")}</Button>
-        </Col>
+        <NavbarBrand href="/">
+          <object type="image/svg+xml" data={eaLogo} className="logo">
+            EA Logo
+          </object>
+        </NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar className="justify-content-end">
+          <Nav navbar>
+            <Link to="/movement" className="main-nav__item">
+              {t("main_nav.about_movement")}
+            </Link>
+            <Link to="/foundation" className="main-nav__item">
+              {t("main_nav.about_foundation")}
+            </Link>
+            <Link to="/join-us" className="main-nav__item">
+              {t("main_nav.join_us")}
+            </Link>
+            <Link to="/blog" className="main-nav__item">
+              {t("main_nav.blog")}
+            </Link>
+            <Link onClick={switchLanguage} className="main-nav__item">
+              {lang === "pl" ? "EN" : "PL"}
+            </Link>
+          </Nav>
+        </Collapse>
+        <Button className="main-nav__button">{t("main_nav.contact")}</Button>
       </Navbar>
     </div>
   );

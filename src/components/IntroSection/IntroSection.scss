@@ -54,3 +54,12 @@
     }
   }
 }
+
+@media (max-width: 1199.98px) {
+  .intro-section {
+    .intro-section-column {
+      max-width: 80%;
+      flex: 0 0 80%;
+    }
+  }
+}

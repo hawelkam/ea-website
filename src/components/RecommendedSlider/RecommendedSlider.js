@@ -22,7 +22,7 @@ const RecommendedSlider = () => {
   };
   return (
     <Row className="recommended-slider">
-      <Col className="text-center mx-auto w-50">
+      <Col className="recommended-slider-column text-center mx-auto w-50">
         <h1 className="recommended-slider__heading">
           Zaprzyjaźnione organizacje
         </h1>

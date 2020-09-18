@@ -15,3 +15,11 @@
     text-transform: none;
   }
 }
+
+@media (max-width: 1199.98px) {
+  .recommended-slider {
+    img {
+      width: 80%;
+    }
+  }
+}

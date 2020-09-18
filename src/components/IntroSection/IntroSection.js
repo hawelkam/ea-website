@@ -9,7 +9,7 @@ const IntroSection = ({ content }) => {
 
   return (
     <Row className="intro-section">
-      <Col xs={6} className="text-center mx-auto">
+      <Col xs={6} className="intro-section-column text-center mx-auto">
         <Fade bottom cascade>
           <div>
             <h1 className="intro-section__heading">{t(`${content}.title`)}</h1>
