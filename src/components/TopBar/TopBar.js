@@ -8,7 +8,6 @@ import {
   NavbarBrand,
   Nav,
   Button,
-  Col,
 } from "reactstrap";
 import eaLogo from "../../assets/images/efektywny-altruizm-logo.svg";
 import { Link } from "react-router-dom";
