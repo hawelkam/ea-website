@@ -32,7 +32,7 @@ const TopBar = () => {
             EA Logo
           </object>
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler className="main-nav__toggler" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar className="justify-content-end">
           <Nav navbar>
             <Link to="/movement" className="main-nav__item">
@@ -51,8 +51,8 @@ const TopBar = () => {
               {lang === "pl" ? "EN" : "PL"}
             </Link>
           </Nav>
+          <Button className="main-nav__button">{t("main_nav.contact")}</Button>
         </Collapse>
-        <Button className="main-nav__button">{t("main_nav.contact")}</Button>
       </Navbar>
     </div>
   );
