@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <Row className="footer">
       <Col className="d-flex flex-row justify-content-between align-items-center">
-        <p className="m-0">
+        <p className="footer__info m-0">
           {t("footer.foundation.name")}
           <br />
           {t("footer.foundation.address")}

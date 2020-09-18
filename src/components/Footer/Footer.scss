@@ -29,3 +29,12 @@
     }
   }
 }
+
+@media (max-width: 767.98px) {
+  .footer__item {
+    text-align: right;
+  }
+  .footer__info {
+    font-size: 0.8rem;
+  }
+}
