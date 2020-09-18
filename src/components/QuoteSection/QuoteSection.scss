@@ -20,3 +20,12 @@
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 991.98px) {
+  .quote-section {
+    .quote-section-column {
+      max-width: 80%;
+      flex: 0 0 80%;
+    }
+  }
+}

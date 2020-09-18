@@ -9,7 +9,7 @@ const QuoteSection = () => {
 
   return (
     <Row className="quote-section">
-      <Col xs={7} className="text-center mx-auto w-50">
+      <Col xs={7} className="quote-section-column text-center mx-auto">
         <Slide left cascade>
           <div>
             <p className="quote-section__quote">"{t("welcome.quote")}"</p>

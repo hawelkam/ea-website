@@ -12,7 +12,7 @@ const ContentPreviewSection = ({ reversed, content }) => {
         reversed ? " flex-row-reverse" : " flex-row"
       } justify-content-center`}
     >
-      <Col xs={5}>
+      <Col xs={5} className="content-preview-section__column">
         <h6 className="content-preview-section__label">{content.label}</h6>
         <h1 className="content-preview-section__heading">{content.heading}</h1>
         <p className="content-preview-section__text">{content.text}</p>
@@ -20,7 +20,7 @@ const ContentPreviewSection = ({ reversed, content }) => {
           {content.cta}
         </Button>
       </Col>
-      <Col xs={7}>
+      <Col xs={7} className="content-preview-section__column">
         <img src={content.img} alt={content.imgAlt} />
       </Col>
     </Row>

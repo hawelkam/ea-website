@@ -51,7 +51,11 @@ const TopBar = () => {
               {lang === "pl" ? "EN" : "PL"}
             </Link>
           </Nav>
-          <Button className="main-nav__button">{t("main_nav.contact")}</Button>
+          <div className="main-nav__button--wrapper">
+            <Button className="main-nav__button">
+              {t("main_nav.contact")}
+            </Button>
+          </div>
         </Collapse>
       </Navbar>
     </div>
