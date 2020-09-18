@@ -21,7 +21,7 @@ const Footer = () => {
           {t("footer.foundation.account.number")}
           <br />
         </p>
-        <Nav className="flex-column align-items-end">
+        <Nav className="footer__nav flex-column align-items-end">
           <NavItem>
             <NavLink
               className="footer__item"

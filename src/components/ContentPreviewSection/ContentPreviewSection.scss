@@ -74,3 +74,13 @@
     }
   }
 }
+
+@media (max-width: 575.98px) {
+  .content-preview-section.flex-row-reverse,
+  .content-preview-section.flex-row {
+    .content-preview-section__column {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+}

@@ -28,3 +28,14 @@
     text-transform: none;
   }
 }
+
+@media (max-width: 575.98px) {
+  .newsletter-cta-section {
+    padding: 2em 10px;
+    &__heading {
+      font-size: 30px;
+      line-height: 44px;
+      margin-top: 0px;
+    }
+  }
+}
