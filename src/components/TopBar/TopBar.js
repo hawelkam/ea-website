@@ -11,6 +11,8 @@ import {
 } from "reactstrap";
 import eaLogo from "../../assets/images/efektywny-altruizm-logo.svg";
 import { Link } from "react-router-dom";
+import plFlag from "../../assets/images/pl.png";
+import ukFlag from "../../assets/images/uk.png";
 
 const TopBar = () => {
   const { t, i18n } = useTranslation("common");
@@ -47,9 +49,9 @@ const TopBar = () => {
             <Link to="/blog" className="main-nav__item">
               {t("main_nav.blog")}
             </Link>
-            <Link onClick={switchLanguage} className="main-nav__item">
-              {lang === "pl" ? "EN" : "PL"}
-            </Link>
+            <div onClick={switchLanguage} className="main-nav__item">
+              <img src={lang === "pl" ? ukFlag : plFlag} alt={lang === "pl" ? "ukFlag" : "plFlag"}/>
+            </div>
           </Nav>
           <div className="main-nav__button--wrapper">
             <Button className="main-nav__button">

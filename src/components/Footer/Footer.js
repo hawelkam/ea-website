@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Col, Nav, NavItem, NavLink, Row } from "reactstrap";
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { t } = useTranslation("common");
@@ -34,7 +35,7 @@ const Footer = () => {
             <NavLink className="footer__item">Napisz do nas</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="footer__item">Ciasteczka</NavLink>
+            <Link to="/cookies" className="footer__item">Ciasteczka</Link>
           </NavItem>
           <NavItem>
             <NavLink className="footer__item">Polityka prywatności</NavLink>

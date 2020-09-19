@@ -17,12 +17,12 @@ const SocialSection = () => {
       <Row className="social-section">
         <Col className="d-flex justify-content-center mx-auto">
           <div className="social-section__icon">
-            <a href="http://facebook.com">
+            <a href="https://www.facebook.com/efektywnyaltruizmfundacja">
               <FontAwesomeIcon icon={faFacebookSquare} className="fa-5x" />
             </a>
           </div>
           <div className="social-section__icon">
-            <a href="htpp://linkedin.com">
+            <a href="https://www.linkedin.com/company/efektywnyaltruizm/">
               <FontAwesomeIcon icon={faLinkedin} className="fa-5x" />
             </a>
           </div>

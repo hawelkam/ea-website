@@ -8,6 +8,7 @@ import JoinUsPage from "./pages/JoinUs/JoinUsPage";
 import Footer from "./components/Footer/Footer";
 import { Container } from "reactstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import CookiesPage from "./pages/Cookies/Cookies";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path="/join-us" exact>
               <JoinUsPage />
+            </Route>
+            <Route path="/cookies" exact>
+              <CookiesPage />
             </Route>
           </Switch>
           <Footer />

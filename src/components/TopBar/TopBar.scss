@@ -22,6 +22,9 @@
       color: #222222;
       text-decoration: none;
     }
+    img {
+      height: 20px;
+    }
   }
   &__button.btn {
     padding: 12px 25px;
@@ -64,6 +67,10 @@
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.main-nav__button--wrapper {
+  text-align: right;
 }
 
 @media (max-width: 1199.98px) {

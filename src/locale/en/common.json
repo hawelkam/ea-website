@@ -4,6 +4,10 @@
     "quote": "There is a growing movement called Effective Altruism. It’s important because it combines both the heart and the head."
   },
   "main_nav": {
-    "about_movement": "About the movement"
+    "about_movement": "Movement",
+    "about_foundation": "Foundation",
+    "join_us": "Join Us",
+    "contact": "Contact",
+    "blog": "Blog"
   }
 }
