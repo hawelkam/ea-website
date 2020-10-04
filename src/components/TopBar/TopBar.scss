@@ -14,7 +14,7 @@
     -moz-transition: 0.3s ease;
     -ms-transition: 0.3s ease;
     -o-transition: 0.3s ease;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem !important;
     &:hover {
       opacity: 1;
       color: #222222;
@@ -71,6 +71,10 @@
   text-align: right;
 }
 
+.main-nav__mobile {
+  display: none !important;
+}
+
 @media (max-width: 1199.98px) {
   .logo {
     width: 200px;
@@ -79,6 +83,15 @@
 
 @media (max-width: 991.98px) {
   .main-nav__button--wrapper {
+    text-align: center;
+  }
+  .main-nav__desktop {
+    display: none !important;
+  }
+  .main-nav__mobile {
+    display: flex !important;
+  }
+  .main-nav__item {
     text-align: center;
   }
 }
